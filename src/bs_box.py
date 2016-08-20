@@ -14,6 +14,10 @@ class Box():
     def draw():
         print("Drawing box")
 
+class SummaryBox(Box):
+    def __init__(self):
+        print("creating summary box")
+
 class Line():
     def __init__(self):
         print("Hello from Line")

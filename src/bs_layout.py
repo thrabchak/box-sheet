@@ -7,7 +7,13 @@ from bs_box import Box
 
 class Layout():
     def __init__(self, configuration):
-        print("Hello in layout")
+        self.boxes = []
 
-    def create(self):
-        print("Creating layout")
+    def getNumRows(self):
+        print("getting num rows")
+
+    def getNumColumns(self);
+        print("getting num columns")
+
+    def createPdf(self):
+        print("Creating layout PDF")

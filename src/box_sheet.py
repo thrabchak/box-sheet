@@ -13,7 +13,7 @@ class BoxSheet():
     def main(self):
         self.configuration = Configuration(args)
         self.layout = Layout(self.configuration)
-        self.layout.create()
+        self.layout.createPdf()
 
 if __name__== "__main__":
     # Handle arguments
