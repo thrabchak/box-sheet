@@ -6,16 +6,16 @@ class Configuration():
         # Defaults config values
         self.boxWidth = 3
         self.boxHeight = 5
-        self.pageMargin = 5
+        self.pageWidth = 100
+	self.pageHeight = 250
+	self.pageMargin = 5
         self.boxMargin = 2
-        self.showMinis = False
-        self.centered = True
-        self.border = .1
+        self.border = 1
         self.isLandscape = False
         self.jsonConfig = None
 
         # Parse json
-        if jsonConfig != None:
+        if self.jsonConfig != None:
             self.parseJson()
 
         # Parse args

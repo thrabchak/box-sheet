@@ -18,7 +18,7 @@ class BoxSheet():
 if __name__== "__main__":
     # Handle arguments
     parser = argparse.ArgumentParser(description='Create a PDF filled with boxes of a chosen size.')
-    parser.add_argument('output path', help='output path of the box sheet PDF')
+    parser.add_argument('output', help='output path of the box sheet PDF')
     parser.add_argument('-c', '--config', help='configuration json file for inputing all parameters at once')
     args = parser.parse_args()
     
