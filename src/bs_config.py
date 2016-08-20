@@ -7,8 +7,8 @@ class Configuration():
         self.boxWidth = 3
         self.boxHeight = 5
         self.pageWidth = 100
-	self.pageHeight = 250
-	self.pageMargin = 5
+        self.pageHeight = 250
+        self.pageMargin = 5
         self.boxMargin = 2
         self.border = 1
         self.isLandscape = False
