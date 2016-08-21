@@ -1,7 +1,7 @@
 #box-sheet 
 
-(https://travis-ci.org/thrabchak/box-sheet.svg?branch=master)
+[![Build Status](https://travis-ci.org/thrabchak/box-sheet.svg?branch=master)](https://travis-ci.org/thrabchak/box-sheet)
 
-Generate a PDF of boxes for drawing sprites in a chosen aspect ratio.
+Generates a PDF of boxes for drawing sprites in a chosen aspect ratio.
 
 
