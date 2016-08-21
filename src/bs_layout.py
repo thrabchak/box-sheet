@@ -10,16 +10,15 @@ class Layout():
             self.config = configuration
             self.boxes = self.createBoxes()
 
-    @classmethod
-    def createBoxes():
+    def createBoxes(self):
             config = self.config
 
             rows, rowSize = self.getFit(config.pageHeight, config.pageMargin, config.boxHeight, config.boxMargin, config.border)
             cols, colSize = self.getFit(config.pageWidth, config.pageMargin, config.boxWidth, config.boxMargin, config.border)
 
             if(rows < 1 or cols < 1):
-                    print("Cannot fit any boxes on the page.")
-                    return None
+                print("Cannot fit any boxes on the page.")
+                return None
 
             # determine boxMarginPadding    
             rowPads = self.getNumPads(rows)
@@ -27,16 +26,33 @@ class Layout():
             colPads = self.getNumPads(cols)
             colPadSize = self.getPadSize(config.pageWidth, colSize, colPads)
 
-    @classmethod
-    def createPdf():
+            # create Box objects
+            boxes = []
+            for row in range(rows):
+                boxRow = []
+                rowValue = self.getRowValue(row)
+                for col in range(cols):
+                    colValue = self.getColValue(col)
+                    boxRow.append(Box(colValue, rowValue, config.boxWidth, config.boxHeight))
+
+            return boxes
+
+    def getRowValue(self, row):
+        return 0
+
+    def getColValue(self, col):
+        return 0
+
+    def createPdf(self):
             """
             Creates a PDF of this box layout.
             """
             if(self.boxes == None):
                 print("Cannot create boxes.")
-                return None
+                return 1
 
             print("Creating layout PDF")
+            return 0
 
     @staticmethod
     def getFit(pageSize, pageMargin, boxSize, boxMargin, boxBorder):

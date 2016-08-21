@@ -77,3 +77,36 @@ class FitTest(unittest.TestCase):
         num, size = Layout.getFit(pageSize, pageMargin, boxSize, boxMargin, boxBorder)
         assert num == 0, "Given num: " + str(num)
         assert size == 0, "Given size: " + str(size)
+
+class CreateBoxesTest(unittest.TestCase):
+
+    def testBoxesOnPage(self):
+        """
+        Boxes on page
+
+        Tests to make sure all boxes created are actually on the page.
+        """
+        pass
+
+    def testBoxesHonorMargin(self):
+        """
+        Boxes within margin
+
+        Tests to make sure all boxes created are within the given margin.
+        """
+        pass
+
+    def testBoxesAtLeastBoxMarginApart(self):
+        """
+        Boxes spaced by box margin
+
+        Tests to make sure all boxes are at least the box margin apart.
+        """
+        pass
+
+    def testBoxesCorrectSize(self):
+        """
+        Box size
+        """
+        pass
+

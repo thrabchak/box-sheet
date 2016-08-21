@@ -10,10 +10,16 @@ class BoxSheet():
     def __init__(self, args):
         self.args = args
 
+    def __init__(self):
+        self.args = None
+        self.configuration = Configuration()
+
     def main(self):
-        self.configuration = Configuration(args)
+        if(self.configuration == None):
+            self.configuration = Configuration(args)
         self.layout = Layout(self.configuration)
-        self.layout.createPdf()
+        retval = self.layout.createPdf()
+        return retval
 
 if __name__== "__main__":
     # Handle arguments

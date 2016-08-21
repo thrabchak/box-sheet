@@ -7,8 +7,28 @@ import reportlab
 from bs_config import Configuration
 
 class Box():
-    def __init__(self):
-        print("Hello from Box")
+    """
+    Represents a box on a page. 
+
+    In the diagram below, the * represents the (x,y) position of the box. (only helpful with monospace font)
+    _______________________________
+    |                    page      |
+    |    _____________________     |
+    |    |    __border___    |     |
+    |    |    |* box     |   |     |
+    |    |    |__________|   |     |
+    |    |___________________|     |
+    |                              |
+    |                              |
+    |                              |
+    |______________________________|
+
+    """
+    def __init__(self, x, y, width, height):
+        self.x = x
+        self.y = y
+        self.width = width
+        self.height = height
         self.lines = [Line(), Line, Line(), Line()]
 
     def draw():
@@ -20,7 +40,7 @@ class SummaryBox(Box):
 
 class Line():
     def __init__(self):
-        print("Hello from Line")
+        pass
 
     def draw(self):
-        print("Drawing line")
+        pass
