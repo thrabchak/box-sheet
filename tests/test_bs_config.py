@@ -3,14 +3,36 @@ This file tests src/bs_config.py
 """
 import unittest
 
-from box_sheet import BoxSheet
+from bs_config import Configuration
 
 class jsonParseTest(unittest.TestCase):
 
-    def testDefaultBoxSheet(self):
+    def testBoxParser(self):
         """
-        Default box sheet
+        Box size in json
         """
-        bs = BoxSheet()
-        retval  = bs.main()
-        assert retval == 0, "Error creating default box sheet"
+        pass
+
+    def testPageParser(self):
+        """
+        Page size in json
+        """
+        pass
+
+    def testPageMarginParser(self):
+        """
+        Page margin in json
+        """
+        pass
+
+    def testBoxMarginParser(self):
+        """
+        Box margin in json
+        """
+        pass
+
+    def testBorderParser(self):
+        """
+        Border in json
+        """
+        pass
