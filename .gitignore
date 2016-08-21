@@ -1,6 +1,7 @@
 *sublime*
 
 # Generic Python .gitignore:
+cover/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
